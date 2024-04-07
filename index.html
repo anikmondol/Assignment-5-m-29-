@@ -31,6 +31,12 @@
             margin: 0;
             padding: 0;
         }
+        .js{
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+        }
+        
     </style>
 
 
@@ -100,7 +106,7 @@
                         app. <br>
                         The integrated testing features allow for a streamlined .</p>
                     <button
-                        class="btn bg-[#1DD100] px-4 py-2 mx-auto font-bold flex text-center justify-center border-none ">Buy
+                        id="tickets_btn" class="btn bg-[#1DD100] px-4 py-2 mx-auto font-bold flex text-center justify-center border-none">Buy
                         Tickets</button>
 
                 </div>
@@ -131,7 +137,7 @@
 
                 <!-- card 3 -->
                 <div
-                    class="flex items-center px-3 py-5 justify-center text-center bg-white gap-2 lg:w-[250px] rounded-2xl border-b-[#1DD100] border-2">
+                    class="flex items-center px-3 py-5 justify-center text-center bg-white gap-2 lg:w-[250px]  rounded-2xl border-b-[#1DD100] border-2">
                     <img class="w-[64px]" src="images/stoppage.png" alt="">
                     <div class="flex flex-col text-left">
                         <h5 class="font-bold text-xl">80K+</h5>
@@ -199,7 +205,7 @@
 
 
 
-    <main class="bg-[#F7F8F8] rounded-3xl border-t border-t-[#1DD100] ">
+    <main id="main" class="bg-[#F7F8F8] rounded-3xl border-t border-t-[#1DD100] ">
 
         <!-- Greenline Paribahan -->
         <section>
@@ -257,7 +263,7 @@
                     </div>
                     <div class="flex flex-col text-center justify-between mx-auto md:px-0">
                         <img class="w-16 mx-auto" src="images/fare.png" alt="">
-                        <h2 class="text-[#030712] font-semibold text-2xl">550 Taka
+                        <h2 class="text-[#030712] font-semibold text-2xl"><span id="ticket_price">550</span> Taka
                         </h2>
                         <p class="text-[20px] text-[#03071299]">Per Seat</p>
                     </div>
@@ -299,84 +305,84 @@
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">A</kbd>
-                                <kbd class="kbd">A1</kbd>
-                                <kbd class="kbd">A2</kbd>
-                                <kbd class="kbd">A3</kbd>
-                                <kbd class="kbd">A4</kbd>
+                                <kbd class="kbd count_seat">A1</kbd>
+                                <kbd class="kbd count_seat">A2</kbd>
+                                <kbd class="kbd count_seat">A3</kbd>
+                                <kbd class="kbd count_seat">A4</kbd>
                                 
                                 
                                 
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">B</kbd>
-                                <kbd class="kbd">B1</kbd>
-                                <kbd class="kbd">B2</kbd>
-                                <kbd class="kbd">B3</kbd>
-                                <kbd class="kbd">B4</kbd>
+                                <kbd class="kbd count_seat">B1</kbd>
+                                <kbd class="kbd count_seat">B2</kbd>
+                                <kbd class="kbd count_seat">B3</kbd>
+                                <kbd class="kbd count_seat">B4</kbd>
                                 
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">C</kbd>
-                                <kbd class="kbd">C1</kbd>
-                                <kbd class="kbd">C2</kbd>
-                                <kbd class="kbd">C3</kbd>
-                                <kbd class="kbd">C4</kbd>
+                                <kbd class="kbd count_seat">C1</kbd>
+                                <kbd class="kbd count_seat">C2</kbd>
+                                <kbd class="kbd count_seat">C3</kbd>
+                                <kbd class="kbd count_seat">C4</kbd>
                                
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">D</kbd>
-                                <kbd class="kbd">D1</kbd>
-                                <kbd class="kbd">D2</kbd>
-                                <kbd class="kbd">D3</kbd>
-                                <kbd class="kbd">D4</kbd>
+                                <kbd class="kbd count_seat">D1</kbd>
+                                <kbd class="kbd count_seat">D2</kbd>
+                                <kbd class="kbd count_seat">D3</kbd>
+                                <kbd class="kbd count_seat">D4</kbd>
                                
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">E</kbd>
-                                <kbd class="kbd">E1</kbd>
-                                <kbd class="kbd">E2</kbd>
-                                <kbd class="kbd">E3</kbd>
-                                <kbd class="kbd">E4</kbd>
+                                <kbd class="kbd count_seat">E1</kbd>
+                                <kbd class="kbd count_seat">E2</kbd>
+                                <kbd class="kbd count_seat">E3</kbd>
+                                <kbd class="kbd count_seat">E4</kbd>
                                
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">F</kbd>
-                                <kbd class="kbd">F1</kbd>
-                                <kbd class="kbd">F2</kbd>
-                                <kbd class="kbd">F3</kbd>
-                                <kbd class="kbd">F4</kbd>
+                                <kbd class="kbd count_seat">F1</kbd>
+                                <kbd class="kbd count_seat">F2</kbd>
+                                <kbd class="kbd count_seat">F3</kbd>
+                                <kbd class="kbd count_seat">F4</kbd>
                                
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">G</kbd>
-                                <kbd class="kbd">G1</kbd>
-                                <kbd class="kbd">G2</kbd>
-                                <kbd class="kbd">G3</kbd>
-                                <kbd class="kbd">G4</kbd>
+                                <kbd class="kbd count_seat">G1</kbd>
+                                <kbd class="kbd count_seat">G2</kbd>
+                                <kbd class="kbd count_seat">G3</kbd>
+                                <kbd class="kbd count_seat">G4</kbd>
                                
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">H</kbd>
-                                <kbd class="kbd">H1</kbd>
-                                <kbd class="kbd">H2</kbd>
-                                <kbd class="kbd">H3</kbd>
-                                <kbd class="kbd">H4</kbd>
+                                <kbd class="kbd count_seat">H1</kbd>
+                                <kbd class="kbd count_seat">H2</kbd>
+                                <kbd class="kbd count_seat">H3</kbd>
+                                <kbd class="kbd count_seat">H4</kbd>
                                
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">I</kbd>
-                                <kbd class="kbd">I1</kbd>
-                                <kbd class="kbd">I2</kbd>
-                                <kbd class="kbd">I3</kbd>
-                                <kbd class="kbd">I4</kbd>
+                                <kbd class="kbd count_seat">I1</kbd>
+                                <kbd class="kbd count_seat">I2</kbd>
+                                <kbd class="kbd count_seat">I3</kbd>
+                                <kbd class="kbd count_seat">I4</kbd>
                                
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
                                 <kbd class="kbd">J</kbd>
-                                <kbd class="kbd">J1</kbd>
-                                <kbd class="kbd">J2</kbd>
-                                <kbd class="kbd">J3</kbd>
-                                <kbd class="kbd">J4</kbd>
+                                <kbd class="kbd count_seat">J1</kbd>
+                                <kbd class="kbd count_seat">J2</kbd>
+                                <kbd class="kbd count_seat">J3</kbd>
+                                <kbd class="kbd count_seat">J4</kbd>
                                
                             </div>
                         </div>
@@ -390,15 +396,18 @@
                     <img class="py-5" src="images/Line-3.png" alt="">
                     <div class="space-y-4">
                         <div class="flex justify-between">
-                            <p class="text-[#030712] font-medium">Seat<span class="bg-green-300 p-2 rounded-xl">0</span></p>
+                            <p class="text-[#030712] font-medium">Seat<span id="count_total" class="bg-green-300 px-2 rounded">0</span></p>
                             <p class="text-[#030712] font-medium">Class</p>
                             <p class="text-[#030712] font-medium">Price</p>
                         </div>
                         <img src="images/Line-3.png" alt="">
-                        <div class="flex justify-between">
-                            <p class="text-[#03071299]">C2</span></p>
-                            <p class="text-[#03071299]">Economoy</p>
-                            <p class="text-[#03071299]">550</p>
+                        <div id="div_container" class="">
+                            
+
+
+
+
+
                         </div>
                         <img src="images/Line-3.png" alt="">
                         <div class="flex justify-between">
