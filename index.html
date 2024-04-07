@@ -38,7 +38,7 @@
 
 <body class="font_raleway">
 
-    <header class="container mx-auto px-[185px] py-3">
+    <header class="container mx-auto px-1 lg:px-[185px] py-3">
 
         <!-- nav -->
 
@@ -90,10 +90,10 @@
 
         <section>
             <div
-                class="bg-[url(images/banner.png)] bg-no-repeat bg-center mt-12 h-[550px] w-[1150px] mx-auto rounded-xl ">
-                <div class="flex flex-col text-center space-y-8 pt-20">
+                class="bg-[url(images/banner.png)] bg-no-repeat bg-center mt-12 h-[550px] lgw-[1150px] mx-auto rounded-xl ">
+                <div class="flex flex-col text-center space-y-8 pt-24 lg:pt-20">
 
-                    <h1 class="text-7xl font-semibold text-white ">End-to-End Travel with <p></p> <span
+                    <h1 class="text-[25px]  md:text-4xl lg:text-7xl font-semibold text-white ">End-to-End Travel with <p></p> <span
                             class="text-[#1DD100] font-medium"> Greenline Paribahan</span></h1>
                     <p class="text-white font_inter"> Yes, you can run unit tests and view the results directly within
                         the
@@ -107,11 +107,11 @@
             </div>
         </section>
 
-        <section>
-            <div class="grid grid-cols-3 mb-10 gap-10 w-3/4 mx-auto mt-[-40px] font_inter">
+        <section class="hidden md:flex">
+            <div class="grid grid-cols-3 mb-10 gap-3 lg:gap-10 w-3/4 mx-auto mt-[-40px] font_inter">
                 <!-- card 1 -->
                 <div
-                    class="flex items-center px-3 py-5 justify-center text-center bg-white gap-2 w-[250px] rounded-2xl border-b-[#1DD100] border-2">
+                    class="flex items-center px-3 py-5 justify-center text-center bg-white gap-2 lg:w-[250px] rounded-2xl border-b-[#1DD100] border-2">
                     <img class="w-[64px]" src="images/people.png" alt="">
                     <div class="flex flex-col text-left">
                         <h5 class="font-bold text-xl">500K+</h5>
@@ -121,7 +121,7 @@
 
                 <!-- card 2 -->
                 <div
-                    class="flex items-center px-3 py-5 justify-center text-center bg-white gap-2 w-[250px] rounded-2xl border-b-[#1DD100] border-2">
+                    class="flex items-center px-3 py-5 justify-center text-center bg-white gap-2 lg:w-[250px] rounded-2xl border-b-[#1DD100] border-2">
                     <img class="w-[64px]" src="images/ticket-cupon.png" alt="">
                     <div class="flex flex-col text-left">
                         <h5 class="font-bold text-xl">1.7 lacks</h5>
@@ -131,7 +131,7 @@
 
                 <!-- card 3 -->
                 <div
-                    class="flex items-center px-3 py-5 justify-center text-center bg-white gap-2 w-[250px] rounded-2xl border-b-[#1DD100] border-2">
+                    class="flex items-center px-3 py-5 justify-center text-center bg-white gap-2 lg:w-[250px] rounded-2xl border-b-[#1DD100] border-2">
                     <img class="w-[64px]" src="images/stoppage.png" alt="">
                     <div class="flex flex-col text-left">
                         <h5 class="font-bold text-xl">80K+</h5>
@@ -147,21 +147,21 @@
         <h1 class="text-center text-[#030712] text-[30px] font-bold mb-8 mt-20 ">Best offers for you</h1>
 
         <section>
-            <div class="mb-10 flex justify-between font_inter gap-6">
+            <div class="mb-10 grid grid-cols-1 lg:grid-cols-2 justify-between font_inter gap-6">
 
                 <div>
-                    <div class="bg-[#FFBF0F] pl-12 flex justify-start items-center text-center rounded-2xl gap-8 ">
+                    <div class="bg-[#FFBF0F] md:pl-12 p-5 md:p-0 flex justify-start items-center text-center rounded-2xl gap-2 md:gap-8 ">
                         <div class="flex flex-col text-start">
-                            <h3 class="text-[#030712CC] font-black text-[36px] font_inter">15% OFF
+                            <h3 class="text-[#030712CC] font-black text-2xl md:text-[36px] font_inter">15% OFF
                             </h3>
                             <h5 class="text-[#030712CC] text-xl font-semibold">on your next purchase
                             </h5>
                             <p class="text-[#030712CC] text-sm">use by January 2024</p>
                         </div>
                         <div>
-                            <img src="images/cupon-devider.png" alt="">
+                            <img class="hidden md:flex" src="images/cupon-devider.png" alt="">
                         </div>
-                        <div class="flex flex-col text-start pr-16">
+                        <div class="flex flex-col text-start  pr-16 mt-5 md:mt-0">
                             <h2 class="text-[#030712CC] font-semibold text-xl">NEW15
                             </h2>
                             <p class="text-sm">Coupon Code</p>
@@ -169,18 +169,18 @@
                     </div>
                 </div>
                 <div>
-                    <div class="bg-[#F78C9C] pl-12 flex justify-start items-center text-center rounded-2xl gap-8 ">
-                        <div class="flex flex-col text-start">
-                            <h3 class="text-[#030712CC] font-black text-[36px]">20% OFF
+                    <div class="bg-[#F78C9C] md:pl-12 p-5 md:p-0 flex justify-start items-center text-center rounded-2xl gap-2 md:gap-8 ">
+                        <div class="flex flex-col text-start ">
+                            <h3 class="text-[#030712CC] font-black text-2xl md:text-[36px]">20% OFF
                             </h3>
                             <h5 class="text-[#030712CC] text-xl font-medium">on your next purchase
                             </h5>
                             <p class="text-[#030712CC] text-sm">use by January 2024</p>
                         </div>
                         <div>
-                            <img src="images/cupon-devider.png" alt="">
+                            <img class="hidden md:flex" src="images/cupon-devider.png" alt="">
                         </div>
-                        <div class="flex flex-col text-start pr-16">
+                        <div class="flex flex-col text-start  pr-16 mt-5 md:mt-0">
                             <h2 class="text-[#030712CC] font-semibold text-xl">Couple 20
                             </h2>
                             <p class="text-sm">Coupon Code</p>
@@ -199,7 +199,7 @@
 
 
 
-    <main class="bg-[#F7F8F8] rounded-3xl border border-t-[#1DD100]">
+    <main class="bg-[#F7F8F8] rounded-3xl border-t border-t-[#1DD100] ">
 
         <!-- Greenline Paribahan -->
         <section>
@@ -210,20 +210,21 @@
             </div>
         </section>
 
+     <!--  main part 1  -->
 
-        <section class="container mx-auto px-[185px] py-3">
+        <section class="container mx-auto  lg:px-[185px] py-3">
             <div class="my-10">
-                <div class="bg-white pl-12 flex justify-between items-center text-center rounded-2xl  ">
+                <div class="bg-white px-4  lg:px-12 flex-col md:flex-row lg:flex justify-between items-center text-center rounded-2xl  ">
                     <div class="flex flex-col text-start">
-                        <div class="flex justify-between gap-[200px]">
-                            <div class="flex gap-4">
-                                <img w-[60px] src="images/bus-logo.png" alt="">
-                                <div>
+                        <div class="  md:flex py-4 justify-between  gap-3 lg:gap-[200px]">
+                            <div class="flex-col md:flex md:flex-row gap-5 ">
+                                <img class="mx-auto md:mx-0 w-[60px]" src="images/bus-logo.png" alt="">
+                                <div class="flex flex-col items-center ">
                                     <h3 class=" text-[##030712] text-[28px] font-bold">Greenline Paribahan</h3>
                                     <p class="font_inter text-[#03071299] text-[18px]">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="flex justify-center">
 
                                 <button
                                     class="btn flex font_inter text-[18px] font-medium text-[#1DD100] bg-[#1DD10026]">
@@ -232,7 +233,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="bg-[#F7F8F8] p-5 rounded-xl space-y-6 mt-10">
+                        <div class="bg-[#F7F8F8] p-5 rounded-xl space-y-6 my-10">
                             <div class="flex justify-between border-dashed border-b border-black">
                                 <p class="text-[#03071299] text-[18px] font-medium">Route</p>
                                 <h5 class="pb-5 text-[#030712]  font-semibold text-[20px]">Dhaka - Sylhet</h5>
@@ -244,17 +245,17 @@
                             </div>
 
 
-                            <div class="flex  justify-between">
-                                <button class="btn font-medium text-[#030712CC]">Boarding Point - Laxmipur</button>
+                            <div class="hidden md:flex  justify-between">
+                                <button class="btn font-medium text-[#030712CC] ">Boarding Point - Laxmipur</button>
                                 <button class="btn font-medium text-[#030712CC]">Dropping Point - Bogura</button>
                                 <button class="btn font-medium text-[#030712CC]">Est. Time - 11 Hour</button>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <img src="images/info-devider.png" alt="">
+                        <img class="hidden lg:flex " src="images/info-devider.png" alt="">
                     </div>
-                    <div class="flex flex-col text-center justify-between pr-10">
+                    <div class="flex flex-col text-center justify-between mx-auto md:px-0">
                         <img class="w-16 mx-auto" src="images/fare.png" alt="">
                         <h2 class="text-[#030712] font-semibold text-2xl">550 Taka
                         </h2>
@@ -264,8 +265,8 @@
             </div>
         </section>
 
-        <section class="container mx-auto px-[185px] py-16">
-            <div class="flex gap-5">
+        <section class="container mx-auto px-[185px] py-16 hidden">
+            <div class="flex   gap-5">
                 <div class="">
                     <div>
                         <div>
@@ -379,6 +380,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <img class="h-[700px] w-2" src="images/Line.svg" alt="">
                 <div class="">
                     <h1 class="text-[#030712] text-[20px] font-medium">Select Your Seat</h1>
@@ -429,13 +432,15 @@
                         <a class=" border-b border-black" href="#">Cancellation Policy</a>
                     </div>
                 </div>
+
+
             </div>
         </section>
 
 
     </main>
 
-    <footer class="bg-[#030712] text-[#FFFFFFCC] py-10">
+    <footer class="bg-[#030712] text-[#FFFFFFCC] py-10 hidden">
         <section class="text-base-content container mx-auto px-[185px] py-3">
             <div class="flex justify-between">
                 <nav>
