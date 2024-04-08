@@ -1,5 +1,8 @@
 document.getElementById('tickets_btn').addEventListener('click', function () {
     showElementById('main');
+    hideElementById('header');
+    hideElementById('footer');
+    
 });
 
 
@@ -11,7 +14,7 @@ let count = 0;
 for (const seat of allSeat) {
 
     seat.addEventListener('click', function (e) {
-        count = count + 1;
+        count = parseInt(count + 1);
         setInnerText('count_total', count);
 
         seat.style.backgroundColor = 'green';
@@ -19,8 +22,24 @@ for (const seat of allSeat) {
 
 
 
+
+
+        const seatTextNumber = getInnerText('seats_numbers');
+        const seatNumber = parseInt(seatTextNumber);
+
+        
+
+        const currentSeatNumber = seatNumber - 1;
+
+
+        setInnerText('seats_numbers', currentSeatNumber);
+
+
+
+        // ----------------------------------
+
         const setText = seat.innerHTML;
-        const ticketPrice = document.getElementById('ticket_price').innerText;
+        const ticketPrice = getInnerTextElement('ticket_price').innerText;
         const price = parseInt(ticketPrice);
         const Economoy = 'Economoy';
 
@@ -30,6 +49,7 @@ for (const seat of allSeat) {
 
 
 
+        // -----------------------------------------
 
         const divContainer = getInnerTextElement('div_container');
 
@@ -55,11 +75,25 @@ for (const seat of allSeat) {
 
         divContainer.appendChild(div)
 
-       
-    
-        
+
+
+        // ------------------------------------
 
        
+        const totalPrice = getInnerText('total_total');
+        const totalPriceNumber = parseInt(totalPrice);
+
+
+
+        
+        
+        setInnerText('total_total', (price + totalPriceNumber));
+
+        
+
+    //    ------------------------------------
+
+    grandTotal('grand_total', (price + totalPriceNumber));
 
 
 
@@ -78,3 +112,28 @@ for (const seat of allSeat) {
 
 
 
+function btnNext(e){
+    const phoneNumber = document.getElementById('phone_number').value;
+    const btn_next = document.getElementById('btn_next');
+
+
+
+    if(phoneNumber.length >= 11){
+       if(count >= 1){
+        console.log('ok');
+        btn_next.classList.remove('disable');
+
+        showElementById('modal');
+
+        hideElementById('main')
+        hideElementById('header')
+        hideElementById('footer')
+
+       }
+    }else{
+        console.log('no');
+    }
+}
+
+
+   
