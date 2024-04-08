@@ -13,13 +13,20 @@ let count = 0;
 
 for (const seat of allSeat) {
 
-    seat.addEventListener('click', function (e) {
-        count = parseInt(count + 1);
-        setInnerText('count_total', count);
+    seat.addEventListener('click', function (event) {
+        count = count + 1;
+        
 
+
+       
+
+        
         seat.style.backgroundColor = 'green';
         seat.style.color = 'white';
+        
+        
 
+        
 
 
 
@@ -42,6 +49,13 @@ for (const seat of allSeat) {
         const ticketPrice = getInnerTextElement('ticket_price').innerText;
         const price = parseInt(ticketPrice);
         const Economoy = 'Economoy';
+
+
+        event.target.setAttribute("disabled", true);  
+
+        
+        
+
 
 
 
@@ -73,10 +87,12 @@ for (const seat of allSeat) {
         div.appendChild(p1);
         div.appendChild(p2);
 
-        divContainer.appendChild(div)
+
+        
+        divContainer.appendChild(div);
 
 
-
+       
         // ------------------------------------
 
        
@@ -85,22 +101,25 @@ for (const seat of allSeat) {
 
 
 
-        
-        
+       
         setInnerText('total_total', (price + totalPriceNumber));
 
         
 
     //    ------------------------------------
 
+ 
+
+
     grandTotal('grand_total', (price + totalPriceNumber));
 
 
+    
+    setInnerText('count_total', count);
 
 
 
-
-
+    
 
     })
 

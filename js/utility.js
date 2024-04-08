@@ -7,6 +7,15 @@ function hideElementById(elementId){
     element.classList.add('hidden');
 }
 
+// -------------------------------
+function addDisabled(elementId){
+    const element = document.getElementsByName(elementId);
+    for (const iterator of element) {
+        iterator.classList.add('disabled');
+    }
+    
+}
+
 // ------------------------------------
 
 
@@ -45,4 +54,8 @@ function grandTotal(category) {
   
     }
   }
+
+// ----------------------------------------------
+
+
 
