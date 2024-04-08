@@ -118,6 +118,9 @@ for (const seat of allSeat) {
     setInnerText('count_total', count);
 
 
+    const number = getARandomAlphabet(1);
+    console.log(number);
+
 
     
 
@@ -142,6 +145,8 @@ function btnNext(e){
         console.log('ok');
         btn_next.classList.remove('disable');
 
+        // console.log('https://anikmondol.github.io/exra/');
+
         showElementById('modal');
 
         hideElementById('main')
@@ -155,4 +160,35 @@ function btnNext(e){
 }
 
 
+//    ----------------------------
+
+function openTheHomePage(){
+
+    
+    showElementById('header');
+    showElementById('main');
+    showElementById('footer');
+
+
+    hideElementById('modal');
+
+}
+
+
+// -------------------------
+
+
+
+function getARandomAlphabet(){
+    // get or create an alphabet array
+    const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+    const alphabets = alphabetString.split('');
+    
+    // get a random index between 0 - 25
+    const randomNumber = Math.random()*25;
+    const index = Math.round(randomNumber);
    
+
+    const alphabet = alphabets[index];
+    return alphabet;
+}
