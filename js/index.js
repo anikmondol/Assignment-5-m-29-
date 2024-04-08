@@ -14,10 +14,16 @@ let count = 0;
 for (const seat of allSeat) {
 
     seat.addEventListener('click', function (event) {
+
+
+
+
         count = count + 1;
         
 
-
+        if (count >= 5) {
+            return alert('already 4 seat selected');
+        }
        
 
         
@@ -144,7 +150,7 @@ function btnNext(e){
         console.log('ok');
         btn_next.classList.remove('disable');
 
-        // console.log('https://anikmondol.github.io/exra/');
+        
 
         showElementById('modal');
 
@@ -154,26 +160,47 @@ function btnNext(e){
 
        }
     }else{
-        console.log('no');
+        alert('select at least one seat && give me your 11 dight phone number');
     }
 }
 
 
 //    ----------------------------
 
+
 function openTheHomePage(){
 
     
     showElementById('header');
-    showElementById('main');
-    showElementById('footer');
-
 
     hideElementById('modal');
+
+    
 
 }
 
 
-// -------------------------
+document.getElementById('apply').addEventListener('click', function () {
+    const couponInput = document.getElementById('coupon_input').value;
+    let grand_total = document.getElementById('grand_total').innerText;
+
+    if(couponInput === 'NEW15'){
+        grand_total = grand_total - grand_total*0.15;
+        setInnerText('grand_total', grand_total);
+        hideElementById('couppon_div');
+    }else if(couponInput === 'Couple 20'){
+        grand_total = grand_total - grand_total*0.20;
+        setInnerText('grand_total', grand_total);
+        hideElementById('couppon_div');
+    }else{
+        alert('invalid input')
+    }
+
+
+    setInnerText('grand_total', grand_total);
+    
+
+})
+
 
 
