@@ -38,14 +38,6 @@
             color: #03071299;
 
         }
-
-        
-
-
-
-        
-        
-        
     </style>
 
 
@@ -115,9 +107,10 @@
                         the
                         app. <br>
                         The integrated testing features allow for a streamlined .</p>
-                    <button id="tickets_btn"
-                        class="btn bg-[#1DD100] px-4 py-2 mx-auto font-bold flex text-center justify-center border-none">Buy
-                        Tickets</button>
+                    <a href="#green_line_ticket"><button id="my_modal_2"
+                            class="btn bg-[#1DD100] px-4 py-2 mx-auto font-bold flex text-center justify-center border-none">Buy
+                            Treckt</button></a>
+
 
                 </div>
             </div>
@@ -180,7 +173,7 @@
                         </div>
                         <div class="flex flex-col text-start  pr-16 mt-5 md:mt-0">
                             <h2 class="text-[#030712CC] font-semibold text-xl">NEW15
-                                
+
                             </h2>
                             <p class="text-sm">Coupon Code</p>
                         </div>
@@ -218,7 +211,7 @@
 
 
 
-    <main id="main" class="bg-[#F7F8F8] rounded-3xl border-t border-t-[#1DD100] hidden">
+    <main id="main" class="bg-[#F7F8F8] rounded-3xl border-t border-t-[#1DD100] ">
 
         <!-- Greenline Paribahan -->
         <section>
@@ -232,7 +225,7 @@
         <!--  main part 1  -->
 
         <section class="container mx-auto px-5 lg:px-[185px] py-3">
-            <div class="my-10">
+            <div class="mb-10">
                 <div
                     class="bg-white px-4  lg:px-12 flex-col md:flex-row lg:flex justify-between items-center text-center rounded-2xl  ">
                     <div class="flex flex-col text-start">
@@ -289,7 +282,7 @@
 
         <!-- main part-2 -->
 
-        <section class="container mx-auto px-5 lg:px-[185px] py-16">
+        <section id="green_line_ticket" class="container mx-auto px-5 lg:px-[185px] py-16">
             <div class="flex-col md:flex lg:flex-row  gap-5">
                 <div class="">
                     <div>
@@ -417,7 +410,7 @@
                             <p class="text-[#030712] font-medium">Class</p>
                             <p class="text-[#030712] font-medium">Price</p>
                         </div>
-                        <img src="images/Line-3.png" alt="">
+                        <!-- <img src="images/Line-3.png" alt=""> -->
                         <div id="div_container" class="">
 
 
@@ -434,8 +427,9 @@
                         </div>
                         <img src="images/Line-3.png" alt="">
                         <div id="couppon_div" class="flex justify-between">
-                            <input id="coupon_input" class="px-2 pl-2 rounded-xl" type="text" placeholder="Have any copupon?">
-                            <button id="apply"  class="btn bg-[#1DD100] text-white">Apply</button>
+                            <input id="coupon_input" class="px-2 pl-2 rounded-xl" type="text"
+                                placeholder="Have any copupon?">
+                            <button id="apply" class="btn bg-[#1DD100] text-white">Apply</button>
                         </div>
                         <img src="images/Line-3.png" alt="">
                         <div class="flex justify-between">
@@ -449,15 +443,17 @@
                         <p class="text-[#030712] font-semibold">Passenger Name*</p>
                         <input type="text" placeholder="Enter your name"
                             class="input input-bordered w-full rounded-md" />
-                        <p>Phone Number*</p>
+                        <p class="text-[#030712] font-semibold">Phone Number*</p>
                         <input id="phone_number" type="number" placeholder="Enter your phone number"
                             class="input input-bordered w-full rounded-md" />
-                        <p>Email ID</p>
+                        <p class="text-[#030712] font-semibold">Email ID</p>
                         <input type="email" placeholder="Enter your email id"
                             class="input input-bordered w-full rounded-md" />
-                        <button
+                        <!-- <button ondblclick="btnNext(); "
                             class="btn bg-[#1DD100] rounded-md text-white font-bold text-xl hover:bg-red-500 duration-200 w-full disable"
-                            id="btn_next" onclick="btnNext()">Next</button>
+                            id="btn_next">Next</button> -->
+
+                            <button class="btn bg-[#1DD100] rounded-md text-white font-bold text-xl hover:bg-red-500 duration-200 w-full" id="submitBtn">Next</button>
                     </div>
                     <div class="hidden justify-between mt-4 md:flex ">
                         <a class=" border-b border-black" href="#">Terms and Conditions</a>
@@ -475,33 +471,84 @@
 
     </main>
 
-    <section id="modal" class="hidden">
-        <!-- module -->
-        <div class="flex justify-center items-center">
-            <!-- Open the modal using ID.showModal() method -->
-            <button class="btn flex justify-center mt-10" onclick="my_modal_2.showModal()">open The Box</button>
-            <dialog id="my_modal_2" class="modal">
-                <div class="modal-box ">
-                    <h3 class="font-bold text-lg">
-                        <img class="mx-auto" src="images/success.png" alt="">
-                    </h3>
-                    <p class="py-4 text-[#27AE60] text-center text-[22px] font-semibold">SUCCESS</p>
-                    <p class="py-4 text-center text-[#4A4A4A] text-[18px] font-medium">Thank you for Booking Our Bus
-                        Seats.
-                        We are working hard to find the best service and deals for you.
-                    </p>
-                    <p class="py-4 text-[#4A4A4A] text-[18px] font-light text-center">Shortly you will find a
-                        confirmation in your email.</p>
-                    <div class="flex justify-center items-center text-center">
-                        <button onclick="openTheHomePage()" class="btn btn-success text-white">
-                            Continue</button>
-                    </div>
-                </div>
-                <form method="dialog" class="modal-backdrop">
-                </form>
-            </dialog>
+
+
+
+
+
+
+    <!-- You can open the modal using ID.showModal() method -->
+
+
+
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <div>
+                <h3 class="font-bold text-lg">
+                    <img class="mx-auto" src="images/success.png" alt="">
+                </h3>
+                <p class="py-4 text-[#27AE60] text-center text-[22px] font-semibold">SUCCESS</p>
+                <p class="py-4 text-center text-[#4A4A4A] text-[18px] font-medium">Thank you for Booking Our Bus
+                    Seats.
+                    We are working hard to find the best service and deals for you.
+                </p>
+                <p class="py-4 text-[#4A4A4A] text-[18px] font-light text-center">Shortly you will find a
+                    confirmation in your email.</p>
+                <!-- <div class="flex justify-center items-center text-center">
+                    <button onclick="openTheHomePage()" >
+                        Continue</button>
+                </div> -->
+            </div>
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <div class="flex justify-center">
+                <button class="btn btn-success text-white mx-auto">Continue</button>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
+      </dialog>
+
+
+
+    <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <div>
+                <h3 class="font-bold text-lg">
+                    <img class="mx-auto" src="images/success.png" alt="">
+                </h3>
+                <p class="py-4 text-[#27AE60] text-center text-[22px] font-semibold">SUCCESS</p>
+                <p class="py-4 text-center text-[#4A4A4A] text-[18px] font-medium">Thank you for Booking Our Bus
+                    Seats.
+                    We are working hard to find the best service and deals for you.
+                </p>
+                <p class="py-4 text-[#4A4A4A] text-[18px] font-light text-center">Shortly you will find a
+                    confirmation in your email.</p>
+                <div class="flex justify-center items-center text-center">
+                    <button onclick="openTheHomePage()" class="btn btn-success text-white">
+                        Continue</button>
+                </div>
+            </div>
+        </div>
+    </dialog> -->
+
+
+   <dialog id="errModal" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <h3 class="font-bold text-lg">Error!!!</h3>
+            <p>SomeThing wrong</p>
+             
+        </div>
+    </dialog>
+
+
 
 
 
