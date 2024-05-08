@@ -185,17 +185,19 @@ handleNext.addEventListener('click', () => {
 document.getElementById('apply').addEventListener('click', function () {
     const couponInput = document.getElementById('coupon_input').value;
     let grand_total = document.getElementById('grand_total').innerText;
-
-    if (couponInput === 'NEW15') {
-        grand_total = grand_total - grand_total * 0.15;
-        setInnerText('grand_total', grand_total);
-        document.getElementById("apply").setAttribute('disabled', false);
-    } else if (couponInput === 'Couple 20') {
-        grand_total = grand_total - grand_total * 0.20;
-        setInnerText('grand_total', grand_total);
-        document.getElementById("apply").setAttribute('disabled', false)
-    } else {
-        alert('invalid input')
+  
+    if(count ===4){
+        if (couponInput === 'NEW15') {
+            grand_total = grand_total - grand_total * 0.15;
+            setInnerText('grand_total', grand_total);
+            document.getElementById("apply").setAttribute('disabled', false);
+        } else if (couponInput === 'Couple 20') {
+            grand_total = grand_total - grand_total * 0.20;
+            setInnerText('grand_total', grand_total);
+            document.getElementById("apply").setAttribute('disabled', false)
+        } else {
+            alert('invalid input')
+        }
     }
 
 
